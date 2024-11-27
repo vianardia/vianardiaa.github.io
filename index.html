@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sayangku! 💝</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Notifikasi -->
+    <div id="notification" class="notification">🎉 Selamat Ulang Tahun Sayang! 🎉</div>
+
+    <div class="heart-bg">❤️</div>
+
+    <!-- Page 1: First Question -->
+    <div id="page1" class="page active">
+        <div class="question-container">
+            <h2>💝 Welcome to Special Birthday Message 💝</h2>
+            <p>Pertanyaan #1:</p>
+            <p>Masukkan nama kamu yang lengkap yaa sayang</p>
+            <input type="text" id="answer1" placeholder="Jawab yaaa sayanggg ..." oninput="animateInput()">
+            <button onclick="nextPage(1)">Next ➡️</button>
+        </div>
+    </div>
+
+    <!-- Page 2: Second Question -->
+    <div id="page2" class="page">
+        <div class="question-container">
+            <h2>🎀 Getting Closer... 🎀</h2>
+            <p>Pertanyaan #2:</p>
+            <p>Tanggal berapa ulang tahunmu?</p>
+            <input type="text" id="answer2" placeholder="Format: DD/MM/YYYY">
+            <button onclick="nextPage(2)">Next ➡️</button>
+        </div>
+    </div>
+
+    <!-- Page 3: Third Question -->
+    <div id="page3" class="page">
+        <div class="question-container">
+            <h2>💖 Almost There... 💖</h2>
+            <p>Pertanyaan #3:</p>
+            <p>Apa panggilan sayang untukmu?</p>
+            <input type="text" id="answer3" placeholder="Jawab dengan manis...">
+            <button onclick="nextPage(3)">Next ➡️</button>
+        </div>
+    </div>
+
+    <!-- Page 4: Fourth Question -->
+    <div id="page4" class="page">
+        <div class="question-container">
+            <h2>💞 Sedikit Lagi! 💞</h2>
+            <p>Pertanyaan #4:</p>
+            <p>Apa makanan favoritmu?</p>
+            <input type="text" id="answer4" placeholder="Jawab dengan benar...">
+            <button onclick="nextPage(4)">Next ➡️</button>
+        </div>
+    </div>
+
+    <!-- Page 5: Fifth Question -->
+    <div id="page5" class="page">
+        <div class="question-container">
+            <h2>💕 Hampir Sampai! 💕</h2>
+            <p>Pertanyaan #5:</p>
+            <p>Dimana tempat favorit kita bersama?</p>
+            <input type="text" id="answer5" placeholder="Jawab dengan penuh kenangan...">
+            <button onclick="nextPage(5)">Show Birthday Message ✨</button>
+        </div>
+    </div>
+
+    <!-- Final Page -->
+    <div id="page6" class="page">
+        <div class="birthday-card">
+            <h1>🎉 Happy Birthday! 🎉</h1>
+            <div id="birthdayMessages">
+                <div class="message">Selamat Ulang Tahun yang ke-22 yaa sayangggg</div>
+                <div class="message">Regita Syawalia Safitri! 👑</div>
+                <div class="message">Pacarku yang paling gemesh dan spesial...</div>
+                <div class="message">Di hari spesialmu ini, aku berharap:</div>
+                <div class="message">✨ Semoga selalu dalam lindungan Allah SWT</div>
+                <div class="message">✨ Semua impianmu tercapai</div>
+                <div class="message">✨ Selalu bahagia dan tersenyum</div>
+                <div class="message">✨ Makin sukses dalam karir</div>
+                <div class="message">✨ Dan tentunya makin sayang sama aku 💝</div>
+                <div class="message">💫 Semoga harimu seindah senyummu! 💫</div>
+                <div class="message">🌟 Ingatlah selalu, kamu istimewa! 🌟</div>
+                <div class="message">Aku mencintaimu 💖</div>
+            </div>
+            <button onclick="replay()">Replay</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
